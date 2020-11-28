@@ -268,13 +268,6 @@ hr.light-100 {
   backface-visibility: visible;
 }
 
-/*-- Bootstrap Mobile Gutter Fix --*/
-.row,
-.container-fluid {
-  margin-left: 0px !important;
-  margin-right: 0px !important;
-}
-
 /*--- Fixed Background Image --*/
 .fixed-background {
   position: relative;
