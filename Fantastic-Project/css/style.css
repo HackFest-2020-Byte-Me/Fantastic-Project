@@ -380,7 +380,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
 
-/* STORE PAGE */
+/* ------ STORE PAGE ------ */
 .cards-bg {
   width: 100%;
   position: relative;

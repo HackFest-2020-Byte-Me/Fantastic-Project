@@ -9,7 +9,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -23,14 +23,19 @@
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
     <!-- Custom Stylesheet -->
-    <link rel="stylesheet" href="Fantastic-Project/css/store.css">
+    <link rel="stylesheet" href="./Fantastic-Project/css/store.css" />
+    <link rel="stylesheet" href="./Fantastic-Project/css/style.css" />
   </head>
+
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-md navbar-light sticky-top">
       <div class="container-fluid">
         <a href="#" class="navbar-brand"
-          ><img src="Fantastic-Project/img/logo.png" alt="Icon Logo"
+          ><img
+            class="logo"
+            src="./Fantastic-Project/img/farm-byte.png"
+            alt="farmbyte-logo"
         /></a>
         <button
           class="navbar-toggler"
@@ -46,19 +51,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a href="index.html" class="nav-link">Home</a>
+              <a href="index.html" class="nav-link active">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">About</a>
+              <a href="#about" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link active">Stores</a>
+              <a href="Fantastic-Project/store.html" class="nav-link">Stores</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Team</a>
+              <a href="#team" class="nav-link">Team</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Contact Us</a>
+              <a href="#contact" class="nav-link">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -66,46 +71,60 @@
     </nav>
     <!-- End of Navigation -->
 
-    <br>
+    <br />
     <h2 align="center">STORES</h2>
-    <br>
-    
+    <br />
+
     <!-- CARDS -->
-    <center>
+    <!-- <center> -->
     <div class="cards-bg">
       <div class="container">
-      <div class="row">
-        <!--CARD 1-->
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="Fantastic-Project./img/CARD1.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Baguio's Best</h5>
-              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, eligendi.</p>
-              <button id="myBtn1">View Store</button>
-              <!-- The Modal -->
-              <div id="myModal" class="modal">
-                    <div class="row">
-                      <div class="col">
-                        <img src="Fantastic-Project/img/CARD1.png" width="100%">
-                        <div class="overlay">
-                            <b>Beef</b>
-                      </div>
-                      </div>
-                      <div class="col">
-                        <img class="card-img-top" src="Fantastic-Project/img/crop_garlic.png">
-                        <div class="overlay">
-                            <b>Onions</b>
-                      </div>
-                      </div>
-                      <div class="col">
-                        <img class="card-img-top" src="Fantastic-Project/img/egg_salted.png">
-                        <div class="overlay">
-                            <b>Salted Egg</b>
-                      </div>
+        <div class="row">
+          <!--CARD 1-->
+          <div class="col">
+            <div class="card" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="./Fantastic-Project/img/CARD1.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Baguio's Best</h5>
+                <p class="card-text"
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Totam, eligendi.</p
+                >
+                <button id="myBtn1">View Store</button>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                  <div class="row">
+                    <div class="col">
+                      <img
+                        src="./Fantastic-Project/img/CARD1.png"
+                        width="100%"
+                      />
+                      <div class="overlay">
+                        <b>Beef</b>
                       </div>
                     </div>
-                  </div>
+                    <div class="col">
+                      <img
+                        class="card-img-top"
+                        src="./Fantastic-Project/img/crop_garlic.png"
+                      />
+                      <div class="overlay">
+                        <b>Onions</b>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <img
+                        class="card-img-top"
+                        src="./Fantastic-Project/img/egg_salted.png"
+                      />
+                      <div class="overlay">
+                        <b>Salted Egg</b>
+                      </div>
+                    </div>
                   </div>
                   <script>
                     // Get the modal
@@ -115,61 +134,78 @@
                     // Get the <span> element that closes the modal
                     var span = document.getElementsByClassName("close")[0];
                     // When the user clicks on the button, open the modal
-                    btn.onclick = function() {
+                    btn.onclick = function () {
                       modal.style.display = "block";
-                    }
+                    };
                     // When the user clicks on <span> (x), close the modal
-                    span.onclick = function() {
+                    span.onclick = function () {
                       modal.style.display = "none";
-                    }
+                    };
                     // When the user clicks anywhere outside of the modal, close it
-                    window.onclick = function(event) {
+                    window.onclick = function (event) {
                       if (event.target == modal) {
                         modal.style.display = "none";
                       }
-                    }
+                    };
                   </script>
                 </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!--CARD 2-->
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="Fantastic-Project/img/CARD2.png" alt="Card image cap">
-            <div class="card-body">Fantastic-Project
-              <h5 class="card-title">Farm Delicious</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, perferendis?</p>
-              <button id="myBtn2">View Store</button>
-              <!-- The Modal -->
-              <div id="myModal" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content">
-                  <span class="close">&times;</span>
-                  <h3 align="center">Farm Delicious</h3>
-                  <div class="store-container" align="center">
-                    <div class="row">
-                      <div class="col">
-                        <img src="Fantastic-Project/img/beef_final.png" width="100%">
-                        <div class="overlay">
+          <!--CARD 2-->
+          <div class="col">
+            <div class="card" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="Fantastic-Project/img/CARD2.png"
+                alt="Card image cap"
+              />
+              <div class="card-body"
+                >Fantastic-Project
+                <h5 class="card-title">Farm Delicious</h5>
+                <p class="card-text"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dicta, perferendis?</p
+                >
+                <button id="myBtn2">View Store</button>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3 align="center">Farm Delicious</h3>
+                    <div class="store-container" align="center">
+                      <div class="row">
+                        <div class="col">
+                          <img
+                            src="./Fantastic-Project/img/beef_final.png"
+                            width="100%"
+                          />
+                          <div class="overlay">
                             <b>Beef</b>
-                      </div>
-                      </div>
-                      <div class="col">
-                        <img class="card-img-top" src="Fantastic-Project/img/crop_garlic.png">
-                        <div class="overlay">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <img
+                            class="card-img-top"
+                            src="./Fantastic-Project/img/crop_garlic.png"
+                          />
+                          <div class="overlay">
                             <b>Onions</b>
-                      </div>
-                      </div>
-                      <div class="col">
-                        <img class="card-img-top" src="Fantastic-Project/img/egg_salted.png">
-                        <div class="overlay">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <img
+                            class="card-img-top"
+                            src="./Fantastic-Project/img/egg_salted.png"
+                          />
+                          <div class="overlay">
                             <b>Salted Egg</b>
-                      </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
                   </div>
                   <script>
                     // Get the modal
@@ -179,61 +215,77 @@
                     // Get the <span> element that closes the modal
                     var span = document.getElementsByClassName("close")[0];
                     // When the user clicks on the button, open the modal
-                    btn.onclick = function() {
+                    btn.onclick = function () {
                       modal.style.display = "block";
-                    }
+                    };
                     // When the user clicks on <span> (x), close the modal
-                    span.onclick = function() {
+                    span.onclick = function () {
                       modal.style.display = "none";
-                    }
+                    };
                     // When the user clicks anywhere outside of the modal, close it
-                    window.onclick = function(event) {
+                    window.onclick = function (event) {
                       if (event.target == modal) {
                         modal.style.display = "none";
                       }
-                    }
+                    };
                   </script>
                 </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!--CARD 3-->
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="Fantastic-ProjectFantastic-ProjectFantastic-ProjectFantastic-Project/Fantastic-ProjectFantastic-ProjectFantastic-ProjectFantastic-Projectimg/CARD3.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Foodvine</h5>
-              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, eligendi.</p>
-              <button id="myBtn3">View Store</button>
-              <!-- The Modal -->
-              <div id="myModal" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content">
-                  <span class="close">&times;</span>
-                  <h3 align="center">Foodvine</h3>
-                  <div class="store-container" align="center">
-                    <div class="row">
-                      <div class="col">
-                        <img src="Fantastic-ProjectFantastic-ProjectFantastic-ProjectFantastic-Project/img/beef_final.png" width="100%">
-                        <div class="overlay">
+          <!--CARD 3-->
+          <div class="col">
+            <div class="card" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="./Fantastic-Project/img/CARD3.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Foodvine</h5>
+                <p class="card-text"
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Totam, eligendi.</p
+                >
+                <button id="myBtn3">View Store</button>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3 align="center">Foodvine</h3>
+                    <div class="store-container" align="center">
+                      <div class="row">
+                        <div class="col">
+                          <img
+                            src="./Fantastic-Project/img/beef_final.png"
+                            width="100%"
+                          />
+                          <div class="overlay">
                             <b>Beef</b>
-                      </div>
-                      </div>
-                      <div class="col">
-                        <img class="card-img-top" src="Fantastic-ProjectFantastic-ProjectFantastic-ProjectFantastic-Project/img/crop_garlic.png">
-                        <div class="overlay">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <img
+                            class="card-img-top"
+                            src="./Fantastic-Project/img/crop_garlic.png"
+                          />
+                          <div class="overlay">
                             <b>Onions</b>
-                      </div>
-                      </div>
-                      <div class="col">
-                        <img class="card-img-top" src="Fantastic-ProjectFantastic-ProjectFantastic-ProjectFantastic-Project/img/egg_salted.png">
-                        <div class="overlay">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <img
+                            class="card-img-top"
+                            src="./Fantastic-Project/img/egg_salted.png"
+                          />
+                          <div class="overlay">
                             <b>Salted Egg</b>
-                      </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
                   </div>
                   <script>
                     // Get the modal
@@ -243,61 +295,77 @@
                     // Get the <span> element that closes the modal
                     var span = document.getElementsByClassName("close")[0];
                     // When the user clicks on the button, open the modal
-                    btn.onclick = function() {
+                    btn.onclick = function () {
                       modal.style.display = "block";
-                    }
+                    };
                     // When the user clicks on <span> (x), close the modal
-                    span.onclick = function() {
+                    span.onclick = function () {
                       modal.style.display = "none";
-                    }
+                    };
                     // When the user clicks anywhere outside of the modal, close it
-                    window.onclick = function(event) {
+                    window.onclick = function (event) {
                       if (event.target == modal) {
                         modal.style.display = "none";
                       }
-                    }
+                    };
                   </script>
                 </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!--CARD 4-->
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="Fantastic-ProjectFantastic-ProjectFantastic-Project/img/CARD4.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Farmdome</h5>
-              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, eligendi.</p>
-              <button id="myBtn4">View Store</button>
-              <!-- The Modal -->
-              <div id="myModal" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content">
-                  <span class="close">&times;</span>
-                  <h3 align="center">Baguio's Best</h3>
-                  <div class="store-container" align="center">
-                    <div class="row">
-                      <div class="col">
-                        <img src="Fantastic-ProjectFantastic-ProjectFantastic-Project/img/beef_final.png" width="100%">
-                        <div class="overlay">
+          <!--CARD 4-->
+          <div class="col">
+            <div class="card" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="./Fantastic-Project/img/CARD4.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Farmdome</h5>
+                <p class="card-text"
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Totam, eligendi.</p
+                >
+                <button id="myBtn4">View Store</button>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3 align="center">Baguio's Best</h3>
+                    <div class="store-container" align="center">
+                      <div class="row">
+                        <div class="col">
+                          <img
+                            src="./Fantastic-Project/img/beef_final.png"
+                            width="100%"
+                          />
+                          <div class="overlay">
                             <b>Beef</b>
-                      </div>
-                      </div>
-                      <div class="col">
-                        <img class="card-img-top" src="Fantastic-ProjectFantastic-ProjectFantastic-Project/img/crop_garlic.png">
-                        <div class="overlay">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <img
+                            class="card-img-top"
+                            src="./Fantastic-Project/img/crop_garlic.png"
+                          />
+                          <div class="overlay">
                             <b>Onions</b>
-                      </div>
-                      </div>
-                      <div class="col">
-                        <img class="card-img-top" src="Fantastic-ProjectFantastic-ProjectFantastic-Project/img/egg_salted.png">
-                        <div class="overlay">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <img
+                            class="card-img-top"
+                            src="./Fantastic-Project/img/egg_salted.png"
+                          />
+                          <div class="overlay">
                             <b>Salted Egg</b>
-                      </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
                   </div>
                   <script>
                     // Get the modal
@@ -307,61 +375,77 @@
                     // Get the <span> element that closes the modal
                     var span = document.getElementsByClassName("close")[0];
                     // When the user clicks on the button, open the modal
-                    btn.onclick = function() {
+                    btn.onclick = function () {
                       modal.style.display = "block";
-                    }
+                    };
                     // When the user clicks on <span> (x), close the modal
-                    span.onclick = function() {
+                    span.onclick = function () {
                       modal.style.display = "none";
-                    }
+                    };
                     // When the user clicks anywhere outside of the modal, close it
-                    window.onclick = function(event) {
+                    window.onclick = function (event) {
                       if (event.target == modal) {
                         modal.style.display = "none";
                       }
-                    }
+                    };
                   </script>
                 </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!--CARD 5-->
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="Fantastic-ProjectFantastic-Project/img/CARD5.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Foodsment</h5>
-              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, eligendi.</p>
-              <button id="myBtn5">View Store</button>
-              <!-- The Modal -->
-              <div id="myModal" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content">
-                  <span class="close">&times;</span>
-                  <h3 align="center">Baguio's Best</h3>
-                  <div class="store-container" align="center">
-                    <div class="row">
-                      <div class="col">
-                        <img src="Fantastic-ProjectFantastic-Project/img/beef_final.png" width="100%">
-                        <div class="overlay">
+          <!--CARD 5-->
+          <div class="col">
+            <div class="card" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="./Fantastic-Project/img/CARD5.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Foodsment</h5>
+                <p class="card-text"
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Totam, eligendi.</p
+                >
+                <button id="myBtn5">View Store</button>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3 align="center">Baguio's Best</h3>
+                    <div class="store-container" align="center">
+                      <div class="row">
+                        <div class="col">
+                          <img
+                            src="./Fantastic-Project/img/beef_final.png"
+                            width="100%"
+                          />
+                          <div class="overlay">
                             <b>Beef</b>
-                      </div>
-                      </div>
-                      <div class="col">
-                        <img class="card-img-top" src="Fantastic-ProjectFantastic-Project/img/crop_garlic.png">
-                        <div class="overlay">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <img
+                            class="card-img-top"
+                            src="./Fantastic-Project/img/crop_garlic.png"
+                          />
+                          <div class="overlay">
                             <b>Onions</b>
-                      </div>
-                      </div>
-                      <div class="col">
-                        <img class="card-img-top" src="Fantastic-ProjectFantastic-Project/img/egg_salted.png">
-                        <div class="overlay">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <img
+                            class="card-img-top"
+                            src="./Fantastic-Project/img/egg_salted.png"
+                          />
+                          <div class="overlay">
                             <b>Salted Egg</b>
-                      </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
                   </div>
                   <script>
                     // Get the modal
@@ -371,61 +455,77 @@
                     // Get the <span> element that closes the modal
                     var span = document.getElementsByClassName("close")[0];
                     // When the user clicks on the button, open the modal
-                    btn.onclick = function() {
+                    btn.onclick = function () {
                       modal.style.display = "block";
-                    }
+                    };
                     // When the user clicks on <span> (x), close the modal
-                    span.onclick = function() {
+                    span.onclick = function () {
                       modal.style.display = "none";
-                    }
+                    };
                     // When the user clicks anywhere outside of the modal, close it
-                    window.onclick = function(event) {
+                    window.onclick = function (event) {
                       if (event.target == modal) {
                         modal.style.display = "none";
                       }
-                    }
+                    };
                   </script>
                 </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!--CARD 6-->
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="Fantastic-Project/img/CARD6.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Farmforage</h5>
-              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, eligendi.</p>
-              <button id="myBtn6">View Store</button>
-              <!-- The Modal -->
-              <div id="myModal" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content">
-                  <span class="close">&times;</span>
-                  <h3 align="center">Baguio's Best</h3>
-                  <div class="store-container" align="center">
-                    <div class="row">
-                      <div class="col">
-                        <img src="Fantastic-Project/img/beef_final.png" width="100%">
-                        <div class="overlay">
+          <!--CARD 6-->
+          <div class="col">
+            <div class="card" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="./Fantastic-Project/img/CARD6.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Farmforage</h5>
+                <p class="card-text"
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Totam, eligendi.</p
+                >
+                <button id="myBtn6">View Store</button>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3 align="center">Baguio's Best</h3>
+                    <div class="store-container" align="center">
+                      <div class="row">
+                        <div class="col">
+                          <img
+                            src="./Fantastic-Project/img/beef_final.png"
+                            width="100%"
+                          />
+                          <div class="overlay">
                             <b>Beef</b>
-                      </div>
-                      </div>
-                      <div class="col">
-                        <img class="card-img-top" src="Fantastic-Project/img/crop_garlic.png">
-                        <div class="overlay">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <img
+                            class="card-img-top"
+                            src="./Fantastic-Project/img/crop_garlic.png"
+                          />
+                          <div class="overlay">
                             <b>Onions</b>
-                      </div>
-                      </div>
-                      <div class="col">
-                        <img class="card-img-top" src="Fantastic-Project/img/egg_salted.png">
-                        <div class="overlay">
+                          </div>
+                        </div>
+                        <div class="col">
+                          <img
+                            class="card-img-top"
+                            src="./Fantastic-Project/img/egg_salted.png"
+                          />
+                          <div class="overlay">
                             <b>Salted Egg</b>
-                      </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
                   </div>
                   <script>
                     // Get the modal
@@ -435,29 +535,75 @@
                     // Get the <span> element that closes the modal
                     var span = document.getElementsByClassName("close")[0];
                     // When the user clicks on the button, open the modal
-                    btn.onclick = function() {
+                    btn.onclick = function () {
                       modal.style.display = "block";
-                    }
+                    };
                     // When the user clicks on <span> (x), close the modal
-                    span.onclick = function() {
+                    span.onclick = function () {
                       modal.style.display = "none";
-                    }
+                    };
                     // When the user clicks anywhere outside of the modal, close it
-                    window.onclick = function(event) {
+                    window.onclick = function (event) {
                       if (event.target == modal) {
                         modal.style.display = "none";
                       }
-                    }
+                    };
                   </script>
                 </div>
+              </div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
-  </div>
-  </center>
+
+    <!--- Footer -->
+    <footer id="contact">
+      <div class="container-fluid padding">
+        <div class="row text-center">
+          <!-- Info Columns -->
+          <div class="col-md-4">
+            <img
+              class="logo"
+              src="./Fantastic-Project/img/farm-byte.png"
+              alt=""
+            />
+            <hr class="light" />
+            <p>555-555-5555</p>
+            <p>example@gmail.com</p>
+            <p>100 Street Name</p>
+            <p>City, State, Zip Code</p>
+          </div>
+
+          <div class="col-md-4">
+            <hr class="light" />
+            <h5>Our Hours</h5>
+            <hr class="light" />
+            <p>Monday: 9:00 AM - 5:00 PM</p>
+            <p>Saturday: 10:00 AM - 7:00 PM</p>
+            <p>Sunday: Closed</p>
+          </div>
+
+          <div class="col-md-4">
+            <hr class="light" />
+            <h5>Our Hours</h5>
+            <hr class="light" />
+            <p>City, State, Zip Code</p>
+            <p>City, State, Zip Code</p>
+            <p>City, State, Zip Code</p>
+            <p>City, State, Zip Code</p>
+          </div>
+          <!-- End of Info Columns -->
+
+          <div class="col-12">
+            <hr class="light-100" />
+            <h5>&copy; Byte Me 2020</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--- End of Footer -->
+    <!-- </center> -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
